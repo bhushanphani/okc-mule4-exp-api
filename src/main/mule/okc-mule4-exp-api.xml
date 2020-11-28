@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="okc-sample-build-mule4Flow" doc:id="1cdcd854-c0cb-4d47-b873-f9a3c4311f61" >
+		<http:listener path="/onprem/test" config-ref="global-api-httpListenerConfig"/>
+		<set-payload value="#['Success...']" doc:name="Set Payload" doc:id="476c8779-9f1f-4ea0-a491-5c5207ab0d7f" />
+	</flow>
+	</mule>
